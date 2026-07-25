@@ -21,7 +21,7 @@ class Coderex < Formula
   # Apple Silicon only today. Linux (x86_64 + aarch64) lands with Phase 2 of the
   # multi-platform roadmap, at which point this gains an `on_linux` block.
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma" # macOS 14+
+  depends_on macos: :sonoma # macOS 14+
 
   # Track releases from the same feed the in-app updater reads, so `brew outdated`
   # stays correct without a second source of truth.

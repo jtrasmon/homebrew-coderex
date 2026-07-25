@@ -24,7 +24,7 @@ cask "coderex" do
   end
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma" # macOS 14+
+  depends_on macos: :sonoma # macOS 14+
 
   # Coderex ships its own Ed25519-signed updater (appcast.json). Declaring this
   # stops Homebrew trying to upgrade the app underneath it, which would fight the
